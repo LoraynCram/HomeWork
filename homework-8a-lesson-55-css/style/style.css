@@ -1,0 +1,30 @@
+* {
+    background: #000;
+}
+
+p {
+    font-size: 40px;
+    color: #fff;
+}
+
+.block-white {
+    height: 100px;
+    background: #fff;
+    border-radius: 10px;
+
+    position: fixed;
+    left: 50%;
+    right: 50px;
+    bottom: 100px;
+}
+
+.block-white__circle {
+    height: 100px;
+    width: 100px;
+    background: #ff0000;
+    border-radius: 100%;
+
+    position: relative;
+    left: 100px;
+    bottom: 50px;
+}
