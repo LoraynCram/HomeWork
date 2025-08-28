@@ -52,4 +52,5 @@ body {
 
 .box span {
     transition-delay: 3s;
+    transition-duration: 1s;
 }
