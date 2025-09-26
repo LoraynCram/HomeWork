@@ -156,6 +156,8 @@
     new Swiper('.tastimonials__slider', {
         slidesPerView: 1,
         centeredSlides: true,
+        initialSlide: 1,
+
 
         scrollbar: {
             el: '.swiper-scrollbar',
@@ -180,3 +182,4 @@
 
 
 })()
+
