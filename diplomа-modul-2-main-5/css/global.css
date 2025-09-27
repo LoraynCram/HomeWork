@@ -1,0 +1,201 @@
+:root {
+    --font: #312c27;
+    --bg-white: #fff9f4;
+    --accent: #ffa55c;
+    --accent-light: #ffe0cb;
+    --accent-light-2: #ceaad0;
+    --input:#ac907a;
+    --heading: #1f1711;
+    --transition: all .4s;
+    --border-radius: 20px;
+}
+
+.body {
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    line-height: 1.5;
+    color: var(font);
+    background: var(--bg-white);
+}
+
+.body--open--menu {
+    overflow: hidden;
+}
+
+
+.wrapper {
+    min-height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex-grow: 1;
+}
+
+.main__about {
+    padding: 140px 0;
+}
+
+.main__program,
+.main__gallery,
+.main__tastimonials {
+    padding-bottom: 145px;
+}
+
+.container {
+    max-width: 1310px;
+    padding: 0 15px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.title {
+    font-size: 74px;
+    line-height: .82;
+    font-family: 'Gabriola';
+    color: var(--heading);
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    background: var(--accent);
+    border-radius: 60px;
+    padding: 18px 36px;
+    height: 62px;
+    line-height: 62px;
+
+    transition: var(--transition);
+}
+
+.button:hover {
+    background: #ff9138;
+}
+
+.modal {
+    position: fixed;
+    inset: 0;
+    background: #00000048;
+    z-index: 3;
+    padding: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition);
+}
+
+.body--open--modal .modal {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal__window {
+    position: relative;
+    background: var(--bg-white);
+    border-radius: var(--border-radius);
+    padding: 0 60px 60px;
+    max-width: 428px;
+}
+
+.modal__cancel {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.modal__cancel path,
+.modal__cancel rect {
+    transition: var(--transition);
+}
+
+.modal__cancel:hover path,
+.modal__cancel:hover rect {
+    stroke: var(--input);
+}
+
+.modal__img {
+    margin: -65px 0 15px 13px;
+    max-width: 100%;
+}
+
+.modal__title {
+    font-size: 42px;
+    line-height: .9;
+    font-family: "Gabriola", sans-serif;
+    margin-bottom: 10px;
+    color: var(--heading);
+}
+
+.modal__text {
+    margin-bottom: 30px;
+}
+
+
+.modal__form-label {
+    margin-bottom: 10px;
+}
+
+.field {
+    position: relative;
+    display: block;
+}
+
+.field span {
+    position: absolute;
+    top: 6px;
+    left: 29px;
+    font-size: 11px;
+    color: var(--input);
+
+    opacity: 0;
+    transition: var(--transition);
+}
+
+.field__input {
+    display: block;
+    border: 1px solid var(--input);
+    border-radius: 100px;
+    padding: 19px 28px;
+    width: 100%;
+    height: 62px;
+    background: #00000002;
+    font-size: 16px;
+
+    transition: var(--transition);
+
+}
+
+.field__input:hover {
+    border-color: var(--accent);
+}
+
+.field__input::placeholder {
+    color: var(--input);
+
+    transition: var(--transition);
+}
+
+.field__input:hover::placeholder {
+    color: var(--accent);
+}
+
+.field__input:focus {
+    padding: 12px 28px;
+}
+
+.field__input:focus+span {
+    opacity: 1;
+}
+
+.modal__button {
+    width: 100%;
+}
