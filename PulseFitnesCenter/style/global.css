@@ -1,0 +1,49 @@
+:root {
+    --font-family: "Oswald", sans-serif;
+    --second-family: "Archivo", sans-serif;
+    --bg-action: #141414;
+    --bg-sub: #f47521;
+    --text-color-light: #fff;
+    --transition: all .4s;
+    /* --text-color-dark:#141414; */
+}
+
+/* =========== */
+
+
+.body {
+    font-family: var(--second-family), 'Arial', sans-serif;
+    line-height: 1.69;
+    background: var(--bg-action);
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    flex-grow: 1;
+}
+
+.body--open--menu {
+    overflow: hidden;
+}
+
+.wrapper {
+    min-height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 1255px;
+    padding: 0 15px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+
+.title {
+    font-family: var(--font-family);
+    text-transform: uppercase;
+}
